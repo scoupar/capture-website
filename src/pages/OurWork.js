@@ -24,7 +24,7 @@ const OurWork = () => {
   return (
     <>
       <Work
-        style={{ background: "#fff" }}
+        style={{ background: "#1b1b1b" }}
         variants={PageAnimation}
         initial="hidden"
         animate="show"
@@ -88,6 +88,9 @@ const Work = styled(motion.div)`
   h2 {
     padding: 1rem 0rem;
   }
+  @media (max-width: 1250px) {
+    padding: 2rem 2rem;
+  }
 `;
 
 const Movie = styled(motion.div)`
@@ -102,6 +105,9 @@ const Movie = styled(motion.div)`
     height: 70vh;
     object-fit: cover;
   }
+  h2 {
+    color: white;
+  }
 `;
 const Hide = styled.div`
   overflow: hidden;
@@ -115,16 +121,16 @@ const Frame1 = styled(motion.div)`
   top: 10%;
   width: 100%;
   height: 100vh;
-  background: #fffebf;
+  background: white;
   z-index: 2;
 `;
 
 const Frame2 = styled(Frame1)`
-  background: #ff8efb;
+  background: #1b1b1b;
 `;
 
 const Frame3 = styled(Frame1)`
-  background: #8ed2ff;
+  background: #d96ed4;
 `;
 const Frame4 = styled(Frame1)`
   background: #8effa0;
